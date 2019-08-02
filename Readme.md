@@ -5,7 +5,7 @@ episodio. Está construido usando el motor de juego [LÖVE](https://love2d.org/)
 [reportar cualquier problema o error][githubissues] que tengas con el juego!
 
 [estate]: http://en.wikipedia.org/wiki/Digital_Estate_Planning
-[githubissues]: https://github.com/sodomon2/hawkthorne-Espanol/issues?state=open
+[githubissues]: https://github.com/sodomon2/hawkthorne-journey-Spanish/issues?state=open
 
 ## Descarga el juego
 
@@ -25,7 +25,7 @@ el juego.
 Comenzar es fácil. Simplemente clone el repositorio y ejecute `love`.
 
 ```bash
-$ git clone https://github.com/sodomon2/hawkthorne-Espanol
+$ git clone https://github.com/sodomon2/hawkthorne-journey-Spanish
 $ love hawkthorne-Espanol
 ```
 
@@ -36,10 +36,10 @@ que configurará git en tu ordenador. También necesitará PowerShell, que inclu
 preinstalado en Windows 7 y 8.
 
 Una vez que haya instalado e iniciado sesión en Github para Windows, vaya a
-`https://github.com/sodomon2/hawkthorne-Espanol` and click the `Fork` button
+`https://github.com/sodomon2/hawkthorne-journey-Spanish` and click the `Fork` button
 
 Después de haber bifurcado con éxito el repositorio, vaya a
-`https://github.com/sodomon2/hawkthorne-Espanol` y haga clic en el botón "Clonar en
+`https://github.com/sodomon2/hawkthorne-journey-Spanish` y haga clic en el botón "Clonar en
 Botón "Windows".
 
 Una vez que tenga el repositorio, haga clic en él en Github para Windows, seleccione "tools > open a shell here".
@@ -54,7 +54,7 @@ En su nueva ventana de PowerShell, ejecute
 
 Felicitaciones! ¡Estás dirigiendo Viaje al centro de Hawkthorne! Sus próximos pasos pueden ser:
 
-- amañar [bugs](https://github.com/sodomon2/hawkthorne-Espanol/issues?labels=bug&state=open) con el juego
+- amañar [bugs](https://github.com/sodomon2/hawkthorne-journey-Spanish/issues?labels=bug&state=open) con el juego
 - Añadir nuevas características y contenido al juego
 
 
