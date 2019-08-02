@@ -1,0 +1,17 @@
+{
+  "start": "Inicio",
+  "controls": "controles",
+  "options": "opciones",
+  "credits": "creditos",
+  "exit": "salir",
+  "load": "cargar",
+  "s_or_s_select_item": "%s o %s: selecionar item",
+  "FULLSCREEN": "fullscreen",
+  "MUSIC VOLUME": "volumen de musica",
+  "SFX VOLUME": "volumen de sfx",
+  "SHOW FPS": "mostrar fps",
+  "SEND PLAY DATA": "enviar datos del juego",
+  "RESET SETTINGS": "restaurar configuracion",
+  "RESET + EXIT": "RESTAURAR + SALIDA"
+  "translators": "traductores"
+}
