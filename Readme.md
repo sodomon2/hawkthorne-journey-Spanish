@@ -26,7 +26,7 @@ Comenzar es fácil. Simplemente clone el repositorio y ejecute `love`.
 
 ```bash
 $ git clone https://github.com/sodomon2/hawkthorne-journey-Spanish
-$ love hawkthorne-Espanol
+$ love hawkthorne-journey-Spanish
 ```
 
 ### Introducción al desarrollo en Windows
@@ -47,7 +47,7 @@ Una vez que tenga el repositorio, haga clic en él en Github para Windows, selec
 En su nueva ventana de PowerShell, ejecute
 
 ```powershell
-> .\love hawkthorne-Espanol
+> .\love hawkthorne-journey-Spanish
 ```
  
 ### Próximos pasos
