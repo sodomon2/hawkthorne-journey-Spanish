@@ -1,9 +1,9 @@
 -- made by Nicko21
 return{
   name = "blue_potion",
-  description = "Jump Boost Potion",
+  description = "Pocion Jump Boost",
   type = "consumable",
-  info = 'a quick jump boost',
+  info = 'un impulso de salto rapido',
   MAX_ITEMS = 2,
   width = 24,
   consumable = {
