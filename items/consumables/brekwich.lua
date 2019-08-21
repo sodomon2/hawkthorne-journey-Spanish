@@ -4,7 +4,7 @@ return{
   name = "brekwich",
   description = "Brekwich",
   type = "consumable",
-  info = "a tasty breakfast sandwitch that will put some pep in your step",
+  info = "un sabroso desayuno sandwitch que pondra algo de energía en tu paso",
   MAX_ITEMS = 2,
   width = 24,
   consumable = {
