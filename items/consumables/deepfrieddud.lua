@@ -2,9 +2,9 @@
 local Timer = require 'vendor/timer'
 return{
   name = "deepfrieddud",
-  description = "Deep Fried Dud",
+  description = "Dud frito",
   type = "consumable",
-  info = 'a fried dud may have unpredictable results',
+  info = 'un inutil frito puede tener resultados impredecibles',
   MAX_ITEMS = 2,
   width = 24,
   duration = 10,
