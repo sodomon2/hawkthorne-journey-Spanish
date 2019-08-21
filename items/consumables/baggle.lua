@@ -3,7 +3,7 @@ return{
   description = "Baggle",
   type = "consumable",
   MAX_ITEMS = 10,
-  info = "a tasty baggle with restorative powers",
+  info = "una sabrosa bolsita con poderes restauradores",
   width = 24,
   consumable = {heal = 'max'}
 }
