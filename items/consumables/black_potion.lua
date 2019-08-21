@@ -2,9 +2,9 @@
 local Timer = require 'vendor/timer'
 return{
   name = "black_potion",
-  description = "Dud Potion",
+  description = "Pocion Dud",
   type = "consumable",
-  info = 'a dud potion may have unpredictable results',
+  info = 'una poción defectuosa puede tener resultados impredecibles',
   MAX_ITEMS = 2,
   width = 24,
   consumable = {
