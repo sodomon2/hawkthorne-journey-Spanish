@@ -2,9 +2,9 @@
 local Timer = require 'vendor/timer'
 return{
   name = "green_potion",
-  description = "Invulnerability Potion",
+  description = "Pocion de invulnerabilidad",
   type = "consumable",
-  info = 'grants invulnerability',
+  info = 'otorga invulnerabilidad',
   MAX_ITEMS = 2,
   width = 24,
   consumable = {
