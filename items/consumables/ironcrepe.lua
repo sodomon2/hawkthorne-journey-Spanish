@@ -1,9 +1,9 @@
 -- made by Nicko21
 return{
   name = "ironcrepe",
-  description = "Chewy Iron Crepe",
+  description = "Crepe de Hierro Chewy",
   type = "consumable",
-  info = "fortifies and maxamizes punches",
+  info = "Fortalece y maxamiza los punzones",
   MAX_ITEMS = 2,
   width = 24,
   consumable = {
