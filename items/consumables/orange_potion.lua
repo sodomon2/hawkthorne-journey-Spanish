@@ -2,9 +2,9 @@
 local Timer = require 'vendor/timer'
 return{
   name = "orange_potion",
-  description = "Speed Boost Potion",
+  description = "Pocion para aumentar la velocidad",
   type = "consumable",
-  info = 'a quick speed boost',
+  info = 'un aumento rapido de velocidad',
   MAX_ITEMS = 2,
   width = 24,
   consumable = {
