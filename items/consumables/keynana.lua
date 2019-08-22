@@ -1,10 +1,10 @@
 -- made by Nicko21
 return{
   name = "keynana",
-  description = "Gummy Key-nana",
+  description = "Llave-nana de goma",
   type = "consumable",
   MAX_ITEMS = 2,
-  info = "grants invulnerability",
+  info = "otorga invulnerabilidad",
   width = 24,
   consumable = {
     buff = {
