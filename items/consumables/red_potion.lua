@@ -1,9 +1,9 @@
 -- made by Nicko21
 return{
   name = "red_potion",
-  description = "Health Potion",
+  description = "Pocion de salud",
   type = "consumable",
-  info = 'heals for 25hp',
+  info = 'sana para 25hp',
   MAX_ITEMS = 2,
   width = 24,
   consumable = {heal = 25},
