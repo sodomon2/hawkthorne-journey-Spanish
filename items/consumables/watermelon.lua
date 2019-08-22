@@ -1,8 +1,8 @@
 return{
   name = "watermelon",
-  description = "Watermelon",
+  description = "Sandia",
   type = "consumable",
-  info="a refreshing snack",
+  info="un refrigerio refrescante",
   MAX_ITEMS = 50,
   width = 24,
   consumable = {heal = 0.5},
