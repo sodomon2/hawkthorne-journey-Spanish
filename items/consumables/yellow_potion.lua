@@ -1,9 +1,9 @@
 -- made by Nicko21
 return{
   name = "yellow_potion",
-  description = "Money Potion",
+  description = "Pocion para el dinero",
   type = "consumable",
-  info = 'grants Money',
+  info = 'Donaciones Dinero',
   MAX_ITEMS = 2,
   width = 24,
   consumable = {
