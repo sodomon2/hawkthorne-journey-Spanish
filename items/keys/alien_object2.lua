@@ -1,7 +1,7 @@
 return{
   name = "alien_object2",
-  description = "Alien Object",
+  description = "Objeto alienigena",
   type = "key",
-  info = "An alien-looking object",
+  info = "Un objeto de aspecto alienigena",
   MAX_ITEMS = 1,
 }
