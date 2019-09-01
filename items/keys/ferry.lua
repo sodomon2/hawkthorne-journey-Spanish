@@ -1,7 +1,7 @@
 return{
   name = "ferry",
-  description = "Ferry",
+  description = "Transbordador",
   type = "key",
-  info = "The key to the Free Ride Ferry",
+  info = "La llave del ferry gratuito",
   MAX_ITEMS = 1,
 }
