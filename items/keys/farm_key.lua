@@ -1,7 +1,7 @@
 return{
   name = "farm_key",
-  description = "Goat Farm Key",
+  description = "Llave de la granja de cabras",
   type = "key",
-  info = "Key to the goat farm in Tacotown",
+  info = "Llave de la granja de cabras en Tacotown",
   MAX_ITEMS = 1,
 }
