@@ -1,7 +1,7 @@
 return{
   name = "document",
-  description = "Document",
+  description = "Documento",
   type = "key",
-  info = "An important- looking document",
+  info = "Un documento de gran importancia",
   MAX_ITEMS = 1,
 }
