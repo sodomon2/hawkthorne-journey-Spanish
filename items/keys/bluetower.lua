@@ -1,9 +1,9 @@
 return{
   name = "bluetower",
-  description = "Blue Tower",
+  description = "Torre Azul",
   type = "key",
   subtype = "key",
-  info = "the key to castle hawkthorne's blue tower",
+  info = "la llave de la torre azul del castillo de hawkthorne",
   MAX_ITEMS = 5,
   quantity = 1,
   directory = 'keys/'
