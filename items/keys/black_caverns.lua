@@ -1,7 +1,7 @@
 return{
   name = "black_caverns",
-  description = "Black Caverns",
+  description = "Cavernas Negras",
   type = "key",
-  info = "the key to open the black caverns",
+  info = "la llave para abrir las cavernas negras",
   MAX_ITEMS = 1,
 }
