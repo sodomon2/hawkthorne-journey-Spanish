@@ -1,7 +1,7 @@
 return{
   name = "master",
-  description = "Master",
+  description = "Maestro",
   type = "key",
-  info = "The Key to Everything!",
+  info = "La clave de todo!",
   MAX_ITEMS = 1,
 }
