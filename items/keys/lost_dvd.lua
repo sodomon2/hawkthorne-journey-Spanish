@@ -1,7 +1,7 @@
 return{
   name = "lost_dvd",
-  description = "Lost DVD",
+  description = "DVD Perdido",
   type = "key",
-  info = "the meaning of Christmas",
+  info = "el significado de la Navidad",
   MAX_ITEMS = 1,
 }
