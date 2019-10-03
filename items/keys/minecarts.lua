@@ -1,10 +1,10 @@
 return{
     name = "minecarts",
-    description = "Mine Carts",
+    description = "Carros de mina",
     type = "key",
     subtype = "key",
     MAX_ITEMS = 1,
     quantity = 1,
-    info = "The key to reactivate the mine carts",
+    info = "La clave para reactivar los carros de la mina",
     directory = 'keys/'
 }
