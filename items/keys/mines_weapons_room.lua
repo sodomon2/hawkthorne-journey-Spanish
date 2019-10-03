@@ -1,6 +1,6 @@
 return{
     name = "mines_weapons_room",
-    description = "Weapons Room Key",
+    description = "Llave de la sala de armas",
     type = "key",
     subtype = "key",
     MAX_ITEMS = 1,
