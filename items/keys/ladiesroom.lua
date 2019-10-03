@@ -1,7 +1,7 @@
 return{
   name = "ladiesroom",
-  description = "Ladies Room",
+  description = "Baño de Damas",
   type = "key",
-  info = "the key to the ladies room",
+  info = "la llave del bano de damas",
   MAX_ITEMS = 1,
 }
