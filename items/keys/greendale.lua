@@ -2,6 +2,6 @@ return{
   name = "greendale",
   description = "Greendale",
   type = "key",
-  info = "a key that is rumored to open a secret door to a place named 'Greendale'",
+  info = "una llave que se rumorea que abre una puerta secreta a un lugar llamado'Greendale'.",
   MAX_ITEMS = 1,
 }
