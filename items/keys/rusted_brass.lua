@@ -1,7 +1,7 @@
 return{
   name = "rusted_brass",
-  description = "Rusted Brass",
+  description = "Laton oxidado",
   type = "key",
-  info = "an old, rusted brass key",
+  info = "una vieja llave de laton oxidado",
   MAX_ITEMS = 1,
 }
