@@ -1,9 +1,9 @@
 return{
   name = "throneroom",
-  description = "Throne Room",    
+  description = "Sala del Trono",    
   type = "key",
   subtype = "key",
-  info = "the key to the throne room of castle hawkthorne",
+  info = "la llave del sala del trono del castillo hawkthorne",
   MAX_ITEMS = 5,
   quantity = 1,
   directory = 'keys/'
