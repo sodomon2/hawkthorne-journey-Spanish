@@ -1,7 +1,7 @@
 return{
   name = "receipt",
-  description = "Receipt",
+  description = "Recibo",
   type = "key",
-  info = "Receipt for the Dean's peanut bar costume. Some rap lyrics are written down at the back: 'Well I'm a peanut bar and I'm here to say...'",
+  info = "Recibo del disfraz de Dean's Peanut Bar. Algunas letras de rap están escritas en la parte posterior: 'Bueno, soy un bar de maní y estoy aquí para decir ...'",
   MAX_ITEMS = 1,
 }
