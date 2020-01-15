@@ -1,7 +1,7 @@
 return{
   name = "office_key",
-  description = "Spare Office",
+  description = "Oficina de repuestos",
   type = "key",
-  info = "The spare key to the Dean's office",
+  info = "La llave de repuesto de la oficina del Decano",
   MAX_ITEMS = 1,
 }
