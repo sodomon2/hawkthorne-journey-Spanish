@@ -1,8 +1,8 @@
 return{
   name = "tower",
-  description = "Tower",
+  description = "Torre",
   type = "key",
-  info = "the key to the first tower of castle hawkthorne",
+  info = "la llave de la primera torre del castillo de hawkthorne",
   subtype = "key",
   MAX_ITEMS = 5,
   quantity = 1,
