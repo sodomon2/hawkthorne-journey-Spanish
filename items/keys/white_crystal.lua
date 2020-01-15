@@ -1,7 +1,7 @@
 return{
   name = "white_crystal",
-  description = "White Crystal",
+  description = "Cristal blanco",
   type = "key",
-  info = "the key to castle hawkthorne",
+  info = "la llave del castillo de hawkthorne",
   MAX_ITEMS = 1,
 }
