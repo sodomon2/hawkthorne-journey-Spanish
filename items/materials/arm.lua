@@ -1,7 +1,7 @@
 return{
   name = 'arm',
-  description = 'Arm',
+  description = 'Brazo',
   type = 'material',
-  info = 'a human arm',
+  info = 'un brazo humano',
   MAX_ITEMS = 10,
 }
