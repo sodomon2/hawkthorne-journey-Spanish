@@ -216,7 +216,7 @@ function Inventory:draw( playerPosition )
     end
     if self:currentPage()[self:slotIndex(self.cursorPos)] then
       local jump = controls:getKey("JUMP")
-      tastyjump = fonts.tasty.new(' {{peach}}' .. jump .. '{{white}} para ver información', pos.x + 9, pos.y + 103, 90, love.graphics.getFont(), fonts.colors)
+      tastyjump = fonts.tasty.new(' {{peach}}' .. jump .. '{{white}} para ver informacion', pos.x + 9, pos.y + 103, 90, love.graphics.getFont(), fonts.colors)
       tastyjump:draw()
     end
 
