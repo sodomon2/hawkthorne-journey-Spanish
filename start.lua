@@ -19,9 +19,9 @@ function state:init()
   self.option_map = {}
   self.options = {
     --           display name       slot number
-    { name = 'SLOT 1',        slot = 1 },
-    { name = 'SLOT 2',        slot = 2 },
-    { name = 'SLOT 3',        slot = 3 },
+    { name = 'RANURA 1',        slot = 1 },
+    { name = 'RANURA 2',        slot = 2 },
+    { name = 'RANURA 3',        slot = 3 },
   }
   for i,o in pairs( self.options ) do
     if o.name then
@@ -92,7 +92,7 @@ function state.get_slot_level(slotNumber)
       end
     end
   else
-    print( "Advertencia: no juegosalvado informacion de slot: " .. slotNumber )
+    print( "Advertencia: no juegosalvado informacion de RANURA: " .. slotNumber )
   end
   return "<vacio>"
 end
@@ -166,8 +166,8 @@ function state:draw()
 
   if self.window == 'main' then
     love.graphics.setColor(255, 255, 255)
-    local howto = controls:getKey("ATTACK") .. " O " .. controls:getKey("JUMP") .. ": SELECCIONAR SLOT"
-    local delete = controls:getKey("INTERACT") .. ": BORRAR SLOT"
+    local howto = controls:getKey("ATTACK") .. " O " .. controls:getKey("JUMP") .. ": SELECCIONAR RANURA"
+    local delete = controls:getKey("INTERACT") .. ": BORRAR RANURA"
     love.graphics.print(howto, 25, 25)
     love.graphics.print(delete, 25, 55)
     local yFactor = 20
@@ -203,7 +203,7 @@ function state:draw()
     love.graphics.print(howto, 25, 25)
     love.graphics.print(delete, 25, 55)
     love.graphics.setColor( 0, 0, 0, 255 )
-    love.graphics.printf('Esta seguro de borrar este slot?', 155, 110, self.background:getWidth() - 30, 'left')
+    love.graphics.printf('Esta seguro de borrar esta ranura?', 155, 110, self.background:getWidth() - 30, 'left')
     love.graphics.print('Si', 175, 175, 0)
     love.graphics.print('No', 175, 205, 0)
     love.graphics.setColor( 255, 255, 255, 255 )
