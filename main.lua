@@ -41,7 +41,7 @@ function love.load(arg)
   -- Check if this is the correct version of LOVE
   if not (type(love._version) == "string")
   then
-    error("etiqueta de versión no válida")
+    error("etiqueta de versión no valida")
   end
 
   local version = utils.split(love._version:gsub("%.", "/"),"/")
@@ -90,7 +90,7 @@ function love.load(arg)
   local args = cli:parse(arg)
 
   if not args then
-    error("No se pudieron analizar los argumentos de la línea de comandos")
+    error("No se pudieron analizar los argumentos de la linea de comandos")
   end
 
   if lovetest.detect(arg) then
