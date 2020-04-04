@@ -1,7 +1,7 @@
 return{
   name = 'berry',
-  description = 'Berry',
+  description = 'Baya',
   type = 'material',
-  info = 'Looks psychotropic. Perfect for a Laser Floyd concert.',
+  info = 'Parece psicotropico. Perfecto para un concierto de Laser Floyd.',
   MAX_ITEMS = 1,
 }
