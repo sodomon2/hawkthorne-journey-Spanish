@@ -237,7 +237,7 @@ function Level:loadNode(path)
   local ok, class = pcall(utils.require, path)
 
   if not ok then 
-  print("WARNING: Can't load " .. path)
+  print("ADVERTENCIA: No se puede cargar " .. path)
   end
 
   self.node_cache[path] = class
@@ -247,7 +247,7 @@ end
 
 function Level:restartLevel(characterSwitch)
   assert(self.name ~= "overworld","el nombre del nivel no puede ser overworld")
-  assert(Gamestate.currentState().name ~= "overworld","level cannot be overworld")
+  assert(Gamestate.currentState().name ~= "overworld","el nivel no puede ser sobre el mundo")
   self.over = false
 
   self.player = Player.factory(self.collider)
