@@ -1,7 +1,7 @@
 return{
   name = 'bluemushroom',
-  description = 'Blue Mushroom',
+  description = 'Seta Azul',
   type = 'material',
-  info = 'An invasive species of mushrooms',
+  info = 'Una especie invasora de setas',
   MAX_ITEMS = 10,
 }
