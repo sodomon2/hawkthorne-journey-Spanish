@@ -373,9 +373,9 @@ state.credits = {
   'zchmhssn89',
   'zhai',
   'znuese',
+  '',
 app.i18n('translators'),
   'sodomon2',
-  'mckaygerhard',
 }
 
 function state:draw()
