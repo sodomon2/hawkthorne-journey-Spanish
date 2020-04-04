@@ -18,26 +18,26 @@ local menu = Menu.new()
 function state:onSelectCallback()
   return function(option)
     local options = {
-      ['FULLSCREEN'] = 'updateFullscreen',
-      ['SHOW FPS'] = 'updateFpsSetting',
-      ['SEND PLAY DATA'] = 'updateSendDataSetting',
-      ['HARDCORE MODE'] = 'updateHardcore',
-      ['TUTORIAL MODE'] = 'updateTutorial',
-      ['SFX VOLUME'] = true,
-      ['MUSIC VOLUME'] = true,
+      ['PANTALLA COMPLETA'] = 'updateFullscreen',
+      ['MOSTRAR FPS'] = 'updateFpsSetting',
+      ['ENVIAR DATOS'] = 'updateSendDataSetting',
+      ['MODO HARDCORE'] = 'updateHardcore',
+      ['MODO TUTORIAL'] = 'updateTutorial',
+      ['VOLUMEN DE SFX'] = true,
+      ['VOLUMEN MUSICA'] = true,
     }
     local menus = {
-      ['COSTUME'] = 'change_costume',
-      ['SAVE GAME'] = 'save_game',
-      ['GAME'] = 'game_menu',
-      ['RESET SETTINGS'] = 'reset_settings',
-      ['RESET SAVES'] = 'reset_saves',
-      ['RESET SETTINGS/SAVES'] = 'reset_menu',
-      ['CANCEL RESET'] = 'game_menu',
+      ['PERSONALIZAR'] = 'change_costume',
+      ['GUARDAR JUEGO'] = 'save_game',
+      ['JUEGO'] = 'game_menu',
+      ['RESETEAR CONFIGURACION'] = 'reset_settings',
+      ['RESETEAR GUARDADOS'] = 'reset_saves',
+      ['RESETEAR CON/GUARDADO'] = 'reset_menu',
+      ['CANCELAR'] = 'game_menu',
       ['AUDIO'] = 'audio_menu',
       ['VIDEO'] = 'video_menu',
-      ['BACK TO OPTIONS'] = 'options_menu',
-      ['BACK TO MENU'] = 'main_menu',
+      ['VOLVER A OPCIONES'] = 'options_menu',
+      ['VOLVER AL MENU'] = 'main_menu',
     }
     if menus[option] then
       self[menus[option]](self)
@@ -47,7 +47,7 @@ function state:onSelectCallback()
         self[options[option]](self)
       end
     else
-      error("Error: Complete the options menu onSelect function! Missing key: " .. option)
+      error("Error: Completa el menu de opciones en la funcion de seleccion! Falta la tecla : " .. option)
     end
   end
 end
@@ -57,40 +57,40 @@ menu:onSelect(state:onSelectCallback())
 local db = store('options-2')
 
 local OPTIONS = {
-  { name = 'FULLSCREEN',              bool   = false          },
-  { name = 'MUSIC VOLUME',            range  = { 0, 10, 10 }  },
-  { name = 'SFX VOLUME',              range  = { 0, 10, 10 }  },
-  { name = 'SHOW FPS',                bool   = false          },
-  { name = 'SEND PLAY DATA',          bool   = false          },
-  { name = 'HARDCORE MODE',           bool   = false          },
-  { name = 'TUTORIAL MODE',           bool   = true           },
+  { name = 'PANTALLA COMPLETA',       bool   = false          },
+  { name = 'VOLUMEN MUSICA',          range  = { 0, 10, 10 }  },
+  { name = 'VOLUMEN DE SFX',          range  = { 0, 10, 10 }  },
+  { name = 'MOSTRAR FPS',             bool   = false          },
+  { name = 'ENVIAR DATOS',            bool   = false          },
+  { name = 'MODO HARDCORE',           bool   = false          },
+  { name = 'MODO TUTORIAL',           bool   = true           },
 }
 
 local MENU = {
-  {name = 'COSTUME'},
-  {name = 'GAME', page = {
-    {name = 'SAVE GAME'},
-    {name = 'HARDCORE MODE'},
-    {name = 'TUTORIAL MODE'},
-    {name = 'SEND PLAY DATA'},
-    {name = 'RESET SETTINGS/SAVES', page = {
-      {name = 'RESET SETTINGS'},
-      {name = 'RESET SAVES'},
-      {name = 'CANCEL RESET'},
+  {name = 'PERSONALIZAR'},
+  {name = 'JUEGO', page = {
+    {name = 'GUARDAR JUEGO'},
+    {name = 'MODO HARDCORE'},
+    {name = 'MODO TUTORIAL'},
+    {name = 'ENVIAR DATOS'},
+    {name = 'RESETEAR CON/GUARDADO', page = {
+      {name = 'RESETEAR CONFIGURACION'},
+      {name = 'RESETEAR GUARDADOS'},
+      {name = 'CANCELAR'},
     }},
-    {name = 'BACK TO OPTIONS'},
+    {name = 'VOLVER A OPCIONES'},
   }},
   {name = 'AUDIO', page = {
-    {name = 'MUSIC VOLUME'},
-    {name = 'SFX VOLUME'},
-    {name = 'BACK TO OPTIONS'},
+    {name = 'VOLUMEN MUSICA'},
+    {name = 'VOLUMEN DE SFX'},
+    {name = 'VOLVER A OPCIONES'},
   }},
   {name = 'VIDEO', page = {
-    {name = 'FULLSCREEN'},
-    {name = 'SHOW FPS'},
-    {name = 'BACK TO OPTIONS'},
+    {name = 'PANTALLA COMPLETA'},
+    {name = 'MOSTRAR FPS'},
+    {name = 'VOLVER A OPCIONES'},
   }},
-  {name = 'BACK TO MENU'},
+  {name = 'VOLVER AL MENU'},
 }
 
 function state:init()
@@ -196,11 +196,11 @@ function state:save_game()
 end
 
 function state:updateHardcore()
-  app.config.hardcore = self.option_map['HARDCORE MODE'].bool
+  app.config.hardcore = self.option_map['MODO HARDCORE'].bool
 end
 
 function state:updateTutorial()
-  app.config.tutorial = self.option_map['TUTORIAL MODE'].bool
+  app.config.tutorial = self.option_map['MODO TUTORIAL'].bool
 end
 
 function state:update(dt)
@@ -225,7 +225,7 @@ function state:leave()
 end
 
 function state:updateFullscreen()
-  if self.option_map['FULLSCREEN'].bool then
+  if self.option_map['PANTALLA COMPLETA'].bool then
     utils.setMode(0, 0, true)
     local width = love.graphics:getWidth()
     local height = love.graphics:getHeight()
@@ -239,17 +239,17 @@ function state:updateFullscreen()
 end
 
 function state:updateFpsSetting()
-  window.showfps = self.option_map['SHOW FPS'].bool
+  window.showfps = self.option_map['MOSTRAR FPS'].bool
 end
 
 function state:updateSendDataSetting()
-  local setting = self.option_map['SEND PLAY DATA']
+  local setting = self.option_map['ENVIAR DATOS']
   app.config.tracker = setting and setting.bool or false
 end
 
 function state:updateSettings()
-  sound.volume('music', self.option_map['MUSIC VOLUME'].range[3] / 10)
-  sound.volume('sfx', self.option_map['SFX VOLUME'].range[3] / 10)
+  sound.volume('music', self.option_map['VOLUMEN MUSICA'].range[3] / 10)
+  sound.volume('sfx', self.option_map['VOLUMEN DE SFX'].range[3] / 10)
 end
 
 function state.reset_settings(self)
