@@ -2,6 +2,6 @@ return{
   name = 'banana',
   description = 'Banana',
   type = 'material',
-  info = 'a banana',
+  info = 'una banana',
   MAX_ITEMS = 10,
 }
